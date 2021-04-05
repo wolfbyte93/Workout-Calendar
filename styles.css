@@ -157,9 +157,13 @@ html{
     transition: background-color 0.2s;
 }
 
-.days div:hover:not(.today){
+.days div:hover:not(.today, .selectedDay, .selectedToday){
     background-color: #262626;
     border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.days div:hover{
     cursor: pointer;
 }
 
@@ -171,3 +175,19 @@ html{
     background-color: #167e56;
 }
 
+.selectedToday{
+    border: 0.3rem solid rgb(233, 233, 233);
+    background-color: #167e56;
+}
+
+.selectedToday:hover{
+    border: 0.4rem solid rgb(233, 233, 233);
+}
+
+.selectedDay{
+    border: 0.3rem solid rgb(233, 233, 233);
+}
+
+.selectedDay:hover{
+    border: 0.4rem solid rgb(233, 233, 233);
+}
